@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: minmax(120px, auto) repeat(5,80px);
+}
+
+.output{
+    background-color: rgb(28, 8, 82);
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    /* add word wrap & word break */
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+button{
+    background-color: #a2a8d3;
+    border: #e7eaf6 1.5px solid;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: #e7eaf6;
+    font-size: 1.8rem;
+}
+
+.output .previous-operand{
+    color: hsl(229, 33%, 80%);
+    font-size: 1.7rem;
+}
+
+.output .current-operand{
+    color: #f5f5f7;
+    font-size: 2rem;
+}
+
+.equals-to{
+    background-color:rgb(28, 8, 82);
+    color:#f5f5f7;
+    font-weight: 700;
+}
+
+.equals-to:hover{
+    background-color:rgb(28, 8, 82);
+}
