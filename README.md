@@ -28,6 +28,7 @@ This project features a countdown timer that counts down to a defined date and t
 
 ### 5. Counter
 ![Project Image 6](./Counter/image.png){:height="200px" width="300px"}
+<img src="./Counter/image.png" alt="Project Image 6" width="300" height="200">
 Description: This project allows users to increment, decrement, or reset a counter displayed on the webpage.
 
 ### 6. Random_Pwsd_Generator
