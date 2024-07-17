@@ -9,7 +9,7 @@ This repo contains a collection of basic JavaScript projects that I have worked 
 ## Projects
 
 ### 1. Background_Color_Flipper
-![Project Image 1](./Background_Color_Flipper/project_image.png)
+![Project Image 1](./Background_Color_Flipper/project_image.png){:height="200px" width="300px"}
 Description: This project changes the background color of the webpage using a valid hex code inputted by the user.
 
 ### 2. BMI_Calculator
