@@ -30,7 +30,7 @@ form.addEventListener('submit', function(e){
         if (bmi < 18.6) {
             message.innerHTML = "You are Underweight";
         } else if (bmi > 18.6 && bmi < 24.9) {
-            message.innerHTML = "Normal"
+            message.innerHTML = "Your are Healthy"
         } else if (bmi > 24.9) {
             message.innerHTML = "You are Overweight"
         }
