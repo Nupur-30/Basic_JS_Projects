@@ -27,7 +27,7 @@ I learned how to implement a basic calculator using object-oriented programming 
 This project features a countdown timer that counts down to a defined date and time. I found this functionality extremely ideal to add in websites.
 
 ### 5. Counter
-![Project Image 6](./Counter/image.png)
+![Project Image 6](./Counter/image.png){:height="200px" width="300px"}
 Description: This project allows users to increment, decrement, or reset a counter displayed on the webpage.
 
 ### 6. Random_Pwsd_Generator
