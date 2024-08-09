@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-container">
+        <h2>Our Records:</h2>
+        <div class="container">
+            <div class="counter" id="coursesSold" data-target="2000">
+                <div class="progress-bar"><img src="" alt=""></div>
+                <div>0</div>
+                <div class="label">Courses Sold</div>
+            </div>
+            <div class="counter" id="customers" data-target="150">
+                <div class="progress-bar"></div>
+                <div>0</div>
+                <div class="label">Customers</div>
+            </div>
+            <div class="counter" id="purchases" data-target="800">
+                <div class="progress-bar"></div>
+                <div>0</div>
+                <div class="label">Purchases</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
+    const duration = 3000; // Total duration for the counting animation in milliseconds
+    const progressBarDuration = 20; // Duration for each progress bar increment
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const countElement = counter.querySelector('div:first-child + div');
+        const progressBar = counter.querySelector('.progress-bar');
+        const increment = target / (duration / progressBarDuration);
+
+        let count = 0;
+        let progress = 0;
+
+        const updateCount = () => {
+            count += increment;
+            if (count < target) {
+                countElement.innerText = Math.ceil(count);
+                setTimeout(updateCount, progressBarDuration);
+            } else {
+                countElement.innerText = target;
+            }
+        };
+
+        const updateProgressBar = () => {
+            progress += increment * 100 / target;
+            if (progress <= 100) {
+                progressBar.style.width = `${progress}%`;
+                setTimeout(updateProgressBar, progressBarDuration);
+            }
+        };
+
+        updateCount();
+        updateProgressBar();
+    });
+});
+
+
+    </script>
+</body>
+</html>

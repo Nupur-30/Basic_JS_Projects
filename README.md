@@ -40,6 +40,20 @@ Description: This project generates a random password of length=12 from a given 
 <img src="./Theme_Change/project_image_2.png" alt="Project Image 9" width="700" height="400">
 Description: This project allows users to switch between different themes for the webpage, such as light and dark modes. It is just like a simple toggle button.
 
+### 8. Bg_image_slider
+<img src="./bg_image_slider/image.png" alt="Project Image 10" width="700" height="400">
+Description: In this project I tried creating a carousel or slider using 3 images in js.
+
+### 9. FAQs
+<img src="./FAQs/image.png" alt="Project Image 11" width="700" height="400">
+
+
+### 10. Numbers (simple progress bar)
+<img src="./Numbers/project_image.png" alt="Project Image 12" width="700" height="400">
+
+### 11. Video_Bg
+<img src="./Video_Bg/image.png" alt="Project Image 13" width="700" height="400">
+
 
 Feel free to explore the projects and their code. If you have any questions or suggestions, please don't hesitate to reach out!
 

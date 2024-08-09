@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Potta+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: #dde6fc;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-container{
+    height: 100%;
+    padding: 10px;
+    border: 2px black solid;
+    margin-top: 50px;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 2rem;
+}
+
+.counter {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px black solid;
+}
+
+.counter > div {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.label {
+    font-size: 0.8rem;
+    color: #3316f1;
+}
+
+.progress-bar {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #eb3737;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
